@@ -7,6 +7,9 @@ module.exports = {
       'c-primary': '#ABEF5F',
 
     },
+    fontFamily: {
+      'manrope': ["Manrope",]
+    },
 
   },
   plugins: [
