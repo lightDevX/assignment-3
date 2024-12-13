@@ -7,48 +7,51 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/tailwind.css" />
   </head>
-  <body>
+  <body class="font-manrope">
     <!-- header section -->
     <header>
       <nav class="container mx-auto mt-7">
         <div class="navbar bg-base-100">
           <div class="navbar-start">
-            <a class="btn btn-ghost text-xl"
-              ><svg
-                width="13.505859"
-                height="13.500000"
-                viewBox="0 0 13.5059 13.5"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink">
-                <desc>Created with Pixso.</desc>
-                <defs />
-                <path
-                  id="Vector"
-                  d="M11.75 1.75L0.75 12.74"
-                  stroke="#1C1C1C"
-                  stroke-opacity="1.000000"
-                  stroke-width="1.500000"
-                  stroke-linecap="round" />
-                <path
-                  id="Vector"
-                  d="M5.75 0.88C5.75 0.88 11.39 0.4 12.24 1.26C13.1 2.11 12.62 7.75 12.62 7.75"
-                  stroke="#1C1C1C"
-                  stroke-opacity="1.000000"
-                  stroke-width="1.500000"
-                  stroke-linejoin="round"
-                  stroke-linecap="round" />
-              </svg>
+            <a
+              class="text-2xl font-extrabold flex items-center justify-center gap-2">
+              <span class="bg-c-primary w-6 h-6 rounded-full p-1"
+                ><svg
+                  width="13.505859"
+                  height="13.500000"
+                  viewBox="0 0 13.5059 13.5"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <desc>Created with Pixso.</desc>
+                  <defs />
+                  <path
+                    id="Vector"
+                    d="M11.75 1.75L0.75 12.74"
+                    stroke="#1C1C1C"
+                    stroke-opacity="1.000000"
+                    stroke-width="1.500000"
+                    stroke-linecap="round" />
+                  <path
+                    id="Vector"
+                    d="M5.75 0.88C5.75 0.88 11.39 0.4 12.24 1.26C13.1 2.11 12.62 7.75 12.62 7.75"
+                    stroke="#1C1C1C"
+                    stroke-opacity="1.000000"
+                    stroke-width="1.500000"
+                    stroke-linejoin="round"
+                    stroke-linecap="round" />
+                </svg>
+              </span>
               Rinterio
             </a>
           </div>
           <div class="navbar-center hidden lg:flex">
             <ul class="menu menu-horizontal px-1">
-              <li><a>Home</a></li>
-              <li><a>Services</a></li>
-              <li><a>Portfolio</a></li>
-              <li><a>Blogs</a></li>
-              <li><a>Contact Us</a></li>
+              <li><a href="#" class="font-extrabold text-base">Home</a></li>
+              <li><a href="#" class="font-normal text-base">Services</a></li>
+              <li><a href="#" class="font-normal text-base">Portfolio</a></li>
+              <li><a href="#" class="font-normal text-base">Blogs</a></li>
+              <li><a href="#" class="font-normal text-base">Contact Us</a></li>
             </ul>
           </div>
           <div class="navbar-end gap-5">
@@ -62,7 +65,6 @@
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink">
-                <desc>Created with Pixso.</desc>
                 <defs />
                 <path
                   id="Vector"
@@ -177,11 +179,13 @@
               <ul
                 tabindex="0"
                 class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0">
-                <li><a>Home</a></li>
-                <li><a>Services</a></li>
-                <li><a>Portfolio</a></li>
-                <li><a>Blogs</a></li>
-                <li><a>Contact Us</a></li>
+                <li><a href="#" class="font-extrabold text-base">Home</a></li>
+                <li><a href="#" class="font-normal text-base">Services</a></li>
+                <li><a href="#" class="font-normal text-base">Portfolio</a></li>
+                <li><a href="#" class="font-normal text-base">Blogs</a></li>
+                <li>
+                  <a href="#" class="font-normal text-base">Contact Us</a>
+                </li>
                 <li class="space-y-1">
                   <a
                     class="bg-c-primary w-full h-10 rounded-full inline-flex items-center justify-center font-bold"
@@ -227,25 +231,117 @@
     <main>
       <!-- Hero Section  -->
 
-      <section class="container mx-auto">
-        <div class="flex items-center justify-center flex-col">
-          <div>
-            <img src="./assets/media/images/banner.png" alt="" />
+      <section class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col items-center justify-center">
+          <div class="w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl">
+            <img src="./assets/media/images/banner.png" alt="" class="w-full" />
           </div>
-          <h1 class="font-manrope font-bold text-6xl text-center">
-            A barn house of this design has a <br />
-            striking appearance
-          </h1>
-          <p class="">
-            The barn house captivates with its blend of rustic charm and modern
-            sophistication, featuring weathered wood, sleek metal accents, and
-            large windows that flood the space with natural light.
-          </p>
-          <button>View Details</button>
+          <div class="space-y-6 text-center mt-6 px-2 sm:px-4">
+            <h1
+              class="font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-center leading-snug">
+              A barn house of this design has a <br class="hidden sm:block" />
+              striking appearance
+            </h1>
+            <p
+              class="font-medium text-center text-sm sm:text-base md:text-lg lg:w-[972px] md:w-4/5 sm:w-full">
+              The barn house captivates with its blend of rustic charm and
+              modern sophistication, featuring weathered wood, sleek metal
+              accents, and large windows that flood the space with natural
+              light.
+            </p>
+            <a
+              href="#"
+              class="bg-c-primary w-full sm:w-44 md:w-52 h-12 sm:h-14 rounded-full px-4 sm:px-6 py-3 sm:py-4 inline-flex mt-1 font-bold text-lg sm:text-xl items-center justify-center">
+              View Details
+              <span
+                class="ml-2 bg-c-circle w-4 sm:w-5 h-4 sm:h-5 rounded-full p-1">
+                <svg
+                  width="12"
+                  height="12"
+                  viewBox="0 0 13.5057 13.5005"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <defs />
+                  <path
+                    id="Vector"
+                    d="M11.75 1.75L0.75 12.74"
+                    stroke="#FFFFFF"
+                    stroke-opacity="1.000000"
+                    stroke-width="1.500000"
+                    stroke-linecap="round" />
+                  <path
+                    id="Vector"
+                    d="M5.75 0.88C5.75 0.88 11.39 0.4 12.24 1.26C13.09 2.11 12.62 7.75 12.62 7.75"
+                    stroke="#FFFFFF"
+                    stroke-opacity="1.000000"
+                    stroke-width="1.500000"
+                    stroke-linejoin="round"
+                    stroke-linecap="round" />
+                </svg>
+              </span>
+            </a>
+          </div>
         </div>
       </section>
 
       <!-- End Hero Section  -->
+
+      <!-- About Section  -->
+
+      <section class="bg-[#F4F4F4] mt-20">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex flex-1 gap-9 pt-24">
+            <div class="space-y-7">
+              <p>About Us</p>
+              <h2>We design thoughtful, liveable spaces</h2>
+              <p>
+                The barn house captivates with its blend of rustic charm and
+                modern sophistication, featuring weathered wood, sleek metal
+                accents.
+              </p>
+              <div class="flex flex-1 gap-4 bg-[#fff] p-6 rounded-2xl">
+                <div>
+                  <img
+                    src="./assets/media/icons/commercial.png"
+                    alt=""
+                    class="w-full" />
+                </div>
+                <div>
+                  <h2>Commercial</h2>
+                  <p>
+                    The barn house captivates with its blend of rustic charm and
+                    modern.
+                  </p>
+                </div>
+              </div>
+              <div class="flex flex-1 gap-4 bg-[#fff] p-6 rounded-2xl">
+                <div>
+                  <img
+                    src="./assets/media/icons/residential.png"
+                    alt=""
+                    class="w-full" />
+                </div>
+                <div>
+                  <h2>Residential</h2>
+                  <p>
+                    The barn house captivates with its blend of rustic charm and
+                    modern.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <img
+                src="./assets/media/images/Rectangle.png"
+                alt=""
+                class="w-full" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- End About Section -->
     </main>
     <!-- end main section -->
 

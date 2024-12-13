@@ -5,6 +5,7 @@ module.exports = {
     extend: {},
     colors: {
       'c-primary': '#ABEF5F',
+      'c-circle': '#07b278'
 
     },
     fontFamily: {
